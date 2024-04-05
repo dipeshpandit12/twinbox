@@ -7,7 +7,7 @@ export default function DashboardPage(props){
                 <h3>Welcome {props.user.displayName}</h3>
                 <p>{props.user.email}</p>
                 <div className="photo">
-                    <img src={props.user.photoURL} alt="/"/>
+                    <img src={props.user.photoURL} alt="/" referrerPolicy="no-referrer"/>
                 </div>
         </>
     )
