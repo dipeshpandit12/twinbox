@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  Route,
+  Routes
+}from 'react-router-dom';
+import pages from "./utils/pages"
+import Layout from "./components/Layout/Layout"
+import LoginPage from "./components/pages/Login/LoginPage";
+import NotFoundPage from "./components/pages/NotFound/NotFoundPage";
+import UnderConstructionPage from './components/pages/UnderConstruction/UnderConstructionPage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<LoginPage/>}/>
+          <Route path={pages.get("login").path} element={<LoginPage/>}/>
+          <Route path={pages.get("dashboard").path} element={<UnderConstructionPage/>}/>
+          <Route path="*" element={<NotFoundPage/>}/>
+        </Routes>
+      </Layout>
+    </>
   );
 }
-
 export default App;
