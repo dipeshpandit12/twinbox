@@ -1,68 +1,74 @@
-/* *{
-  margin:0;
-  padding: 0;
-}
+*{
+    margin:0;
+    padding: 0;
+  }
 
-body{
-  font-family: karla,sans-serif;
-  font-size: 1rem;
-  --webkit-font-smoothing:antialiased;
-  --moz-osx-font-smoothing:grayscale;
-  line-height: 1.5;
-  color: white;
-}
+  body{
+    font-family: 'karla,sans-serif';
+    font-size: 1rem;
+    --webkit-font-smoothing:antialiased;
+    --moz-osx-font-smoothing:grayscale;
+    line-height: 1.5;
+    color: #3751FE;
+  }
 
-.container{
-  max-width: 61.625rem;
-  width:90%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .container{
+    max-width: 61.625rem;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.grid{
-  display: grid;
-}
+  .grid{
+    display: grid;
+  }
 
-.primary-color{
-  color: #A8EB12;
-}
+  .primary-color{
+    color: #3751FE;
+  }
+  
+  .secondary-color{
+    color: #000;
+  }
+  
+  .tertiary-color{
+    color: rgba(0, 0, 0, 0.60);
+  }
+  
+  a{
+    text-decoration: none;
+  }
 
-.secondary-color{
-  color: #051937;
-}
+  .button{
+    width: 5rem;
+    height: 1.8rem;
+    flex-shrink: 0;
+    text-align: center;
+  }
 
-a{
-  text-decoration: none;
-}
+  .button-primary {
+    background-color: #A8EB12;
+    color: #051937;
+    border: 0.1875rem solid #A8EB12;
+  }
+  
+  .button-primary:hover,
+  .button-primary:focus {
+    background-color: #A8EB12;
+    border-color: white;
+  }
+  
+  .button-secondary {
+    border-radius: 0.5rem;
+    border: 1px solid  hsl(232, 99%, 61%);
+    background: #FFF;
+    margin-left: 1.3rem;
+  }
 
-.button{
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  font-weight: bold;
-  transition: border, color 0.5s;
-}
-
-.button-primary {
-  background-color: #A8EB12;
-  color: #051937;
-  border: 0.1875rem solid #A8EB12;
-}
-
-.button-primary:hover,
-.button-primary:focus {
-  background-color: #A8EB12;
-  border-color: white;
-}
-
-.button-secondary {
-  background-color: #051937;
-  color: white;
-  border: 0.1875rem solid #051937;
-}
-
-.button-secondary:hover,
-.button-secondary:focus {
-  background-color: #051937;
-  border-color: white;
-  color: #FFFFFF;
-} */
+  .button-secondary:hover,
+  .button-secondary:focus {
+    border-radius: 0.5rem;
+    background: #3751FE;
+    color: #FFF;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.25);
+  }

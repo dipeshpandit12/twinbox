@@ -1,9 +1,21 @@
 import './LoginPage.css';
+import brandImage from './assets/brand.png';
+import LoginForm from './LoginForm';
 
-export default function LoginPagePage(){
+export default function HomePage(){
     return(
-            <>
-            LoginPage
-            </>
+            <div className="login-page">
+                <div className="container grid">
+                    <div className='login-page-loginForm'>
+                        <LoginForm/>
+                    </div>
+                    <div className='login-page-image'>
+                        <img
+                            alt='heroImage'
+                            src={brandImage}
+                        />
+                    </div>
+                </div>
+            </div>
     )
 }

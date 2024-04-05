@@ -1,0 +1,73 @@
+.login-page{
+    background-color: white;
+}
+.login-page .container{
+  grid-template-columns: 1fr 1fr;
+  column-gap:3.5rem;
+  row-gap: 0.1rem;
+  height: 90vh;
+}
+
+.login-page-loginForm{
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-page-loginForm h1{
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.login-page-loginForm h3{
+  font-size: 0.8rem;
+  margin-left: -6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.login-page-loginForm .login-page-buttons{
+  margin-top: 3rem;
+}
+
+.login-page-loginForm .login-page-buttons .button{
+  margin-right: 1rem;
+}
+
+.login-page-image{
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page-image img{
+  width:80%;
+  min-height: 5rem;
+  max-height: 25rem;
+  border-radius: 1rem;
+}
+
+@media (max-width:792px){
+  .login-page .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .login-page-loginForm{
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: flex-start;
+  }
+  .login-page-image{
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

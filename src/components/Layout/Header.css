@@ -1,0 +1,18 @@
+.nav-bar .container{
+  grid-template-columns: auto;
+  height: 10vh;
+  display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.nav-bar img{
+    width: 10rem;
+}
+
+@media(min-width:1150px){
+    .nav-bar img{
+        margin-left: -5rem;
+    }
+
+}
