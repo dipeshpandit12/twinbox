@@ -12,7 +12,9 @@ import {
 } from "@chakra-ui/react";
 import { ChakraProvider } from '@chakra-ui/react'
 import { Link } from "react-router-dom";
-export default function LoginForm() {
+
+
+export default function LoginForm(props) {
   return (
     <ChakraProvider>
       <h1 className="primary-color">Make maximum use of unlimited Storage </h1>
@@ -86,13 +88,13 @@ export default function LoginForm() {
                 </Button>
                 <FormLabel className="tertiary-color">OR</FormLabel>
                 <Flex>
-                  <Link className='button button-secondary' target='/blank' to='/'>
+                  <Link className='button button-secondary'onClick={props.handleGoogleSignIn} >
                     Google
                   </Link>
-                  <Link className='button button-secondary' target='/blank' to='/'>
+                  <Link className='button button-secondary' to='/'>
                     Facebook
                   </Link>
-                  <Link className='button button-secondary' target='/blank' to='/'>
+                  <Link className='button button-secondary' to='/'>
                     Github
                   </Link>
                 </Flex>
@@ -103,5 +105,6 @@ export default function LoginForm() {
       </Box>
     </Flex>
     </ChakraProvider>
+
   );
 }
