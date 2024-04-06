@@ -91,10 +91,7 @@ export default function LoginForm(props) {
                   <Link className='button button-secondary'onClick={props.handleGoogleSignIn} >
                     Google
                   </Link>
-                  <Link className='button button-secondary' to='/'>
-                    Facebook
-                  </Link>
-                  <Link className='button button-secondary' to='/'>
+                  <Link className='button button-secondary' onClick={props.handleGithubSignIn}>
                     Github
                   </Link>
                 </Flex>
