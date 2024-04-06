@@ -88,11 +88,8 @@ export default function LoginForm(props) {
                 </Button>
                 <FormLabel className="tertiary-color">OR</FormLabel>
                 <Flex>
-                  <Link className='button button-secondary'onClick={props.handleGoogleSignIn} >
+                  <Link  width="full" className='button button-secondary'onClick={props.handleGoogleSignIn} >
                     Google
-                  </Link>
-                  <Link className='button button-secondary' onClick={props.handleGithubSignIn}>
-                    Github
                   </Link>
                 </Flex>
               </VStack>
