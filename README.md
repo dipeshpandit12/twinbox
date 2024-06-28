@@ -6,4 +6,5 @@ Welcome to Twin Box - A Cloud-storage
 2. Live demo: https://twinbox.vercel.app/
 
 3. Demo image:
-![image](https://github.com/dipeshpandit12/twinbox/assets/111444800/fc812d1b-b7a8-469f-ab56-b53df2cf27b0)
+![image](https://github.com/dipeshpandit12/twinbox/assets/111444800/b48fe515-a7be-4f83-9f3a-b189c1895256)
+
